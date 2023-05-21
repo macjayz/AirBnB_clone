@@ -12,7 +12,7 @@ do
 		git push
 	fi
 done
-echo "$files"
+echo "Total commited: $files files"
 
 #To take care of deleted and hidden files:
 
