@@ -4,11 +4,15 @@ files_list=$(ls)
 files=0
 for file in $files_list:
 do
-	files=$((files + 1))
-	git add "$file"
-	git commit -m "$file"
-	git push
+	if [ "$file" != "git_push" ]
+	then
+		files=$((files + 1))
+		git add "$file"
+		git commit -m "$file"
+		git push
+	fi
 done
+echo "$files"
 
 #To take care of deleted and hidden files:
 
