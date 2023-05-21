@@ -1,1 +1,1 @@
-web static
+AirBNB Web Static
